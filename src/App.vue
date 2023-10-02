@@ -9,7 +9,7 @@
 <style lang="scss" scoped>
 .aaa {
   h1 {
-    color: red;
+    color: $COLOR_PRIMARY;
   }
 }
 </style>
