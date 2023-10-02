@@ -1,8 +1,5 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
+  env: { browser: true, es2021: true },
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
@@ -10,9 +7,7 @@ module.exports = {
   ],
   overrides: [
     {
-      env: {
-        node: true,
-      },
+      env: { node: true },
       files: [".eslintrc.{js,cjs}"],
       parserOptions: {
         sourceType: "script",
@@ -26,9 +21,9 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "vue"],
   rules: {
-    indent: ["error", 4],
+    indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "never"],
   },
-};
+}
