@@ -1,8 +1,12 @@
-<script setup lang="ts"></script>
+<script lang="ts">
+const sample: string = ""
+console.log(sample)
+</script>
 
 <template>
   <div class="aaa">
     <h1>Vue</h1>
+    <router-view />
   </div>
 </template>
 
