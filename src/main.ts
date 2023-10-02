@@ -7,8 +7,7 @@ import "./styles/global.scss"
 
 const routes = [
   { path: "/", component: { template: index1 } },
-  // { path: "/about", component: { template: index2 } },
-  { path: "/about", component: { template: "<div>bbb</div>" } },
+  { path: "/about", component: { template: index2 } },
 ]
 
 const router = createRouter({
