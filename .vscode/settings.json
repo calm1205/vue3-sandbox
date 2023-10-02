@@ -1,0 +1,6 @@
+{
+  "cSpell.ignoreWords": [],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
