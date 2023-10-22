@@ -6,7 +6,7 @@ import { createRouter, createWebHashHistory } from "vue-router"
 import "./styles/global.scss"
 
 const routes = [
-  { path: "/", component: { template: index1 } },
+  { path: "/", component: index1 },
   { path: "/about", component: { template: index2 } },
 ]
 
