@@ -1,7 +1,4 @@
 <script lang="ts">
-const sample: string = ""
-console.log(sample)
-
 export default {}
 </script>
 
