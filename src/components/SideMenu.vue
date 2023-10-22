@@ -10,10 +10,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue"
+import { COLOR } from "@/constants/styles.ts"
 
 export default defineComponent({
   props: {
     list: { type: Array<string>, required: true },
+  },
+  data() {
+    return { COLOR }
   },
 })
 </script>
@@ -23,7 +27,7 @@ export default defineComponent({
   width: 300px;
   height: 100vh;
   padding: 50px;
-  background-color: $COLOR_PRIMARY;
+  background-color: v-bind("COLOR.primary._");
 }
 
 ul {
