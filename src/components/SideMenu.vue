@@ -9,9 +9,13 @@
 </template>
 
 <script lang="ts">
-export default {
-  props: ["list"],
-}
+import { defineComponent } from "vue"
+
+export default defineComponent({
+  props: {
+    list: { type: Array<string>, required: true },
+  },
+})
 </script>
 
 <style lang="scss" scoped>
