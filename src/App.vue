@@ -1,18 +1,26 @@
 <script lang="ts">
-export default {}
+import SideMenu from "./components/SideMenu.vue"
+import MainArea from "./components/MainArea.vue"
+
+export default {
+  components: {
+    SideMenu,
+    MainArea,
+  },
+}
 </script>
 
 <template>
-  <div class="aaa">
-    <h1>Vue</h1>
-    <router-view />
+  <div class="wrapper">
+    <SideMenu :list="['Vue', 'React', 'Angular']" />
+    <MainArea>
+      <router-view />
+    </MainArea>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.aaa {
-  h1 {
-    color: $COLOR_PRIMARY;
-  }
+.wrapper {
+  display: flex;
 }
 </style>

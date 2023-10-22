@@ -2,6 +2,12 @@
 export default {}
 </script>
 
-<template>aaa</template>
+<template>
+  <div class="wrapper">aaa</div>
+</template>
 
-<style></style>
+<style lang="scss">
+.wrapper {
+  color: white;
+}
+</style>
