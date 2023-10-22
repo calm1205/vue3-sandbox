@@ -20,6 +20,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 li {
+  font-size: 14px;
+  letter-spacing: 0.1em;
   color: v-bind("COLOR.text");
+  &:hover {
+    color: v-bind("COLOR.main._");
+  }
 }
 </style>
