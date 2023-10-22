@@ -1,19 +1,25 @@
 <template>
   <div class="wrapper">
     <ul>
-      <li v-for="item in list" :key="item">
-        {{ item }}
-      </li>
+      <Item v-for="item in list" :key="item" :text="item" />
     </ul>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue"
+import { COLOR } from "@/constants/styles.ts"
+import Item from "./Item.vue"
 
 export default defineComponent({
   props: {
     list: { type: Array<string>, required: true },
+  },
+  data() {
+    return { COLOR }
+  },
+  components: {
+    Item,
   },
 })
 </script>
@@ -23,16 +29,12 @@ export default defineComponent({
   width: 300px;
   height: 100vh;
   padding: 50px;
-  background-color: $COLOR_PRIMARY;
+  background-color: v-bind("COLOR.primary._");
 }
 
 ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-li {
-  color: white;
 }
 </style>
