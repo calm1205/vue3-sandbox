@@ -1,9 +1,7 @@
 <template>
   <div class="wrapper">
     <ul>
-      <li v-for="item in list" :key="item">
-        {{ item }}
-      </li>
+      <Item v-for="item in list" :key="item" :text="item" />
     </ul>
   </div>
 </template>
@@ -11,6 +9,7 @@
 <script lang="ts">
 import { defineComponent } from "vue"
 import { COLOR } from "@/constants/styles.ts"
+import Item from "./Item.vue"
 
 export default defineComponent({
   props: {
@@ -18,6 +17,9 @@ export default defineComponent({
   },
   data() {
     return { COLOR }
+  },
+  components: {
+    Item,
   },
 })
 </script>
@@ -34,9 +36,5 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-li {
-  color: white;
 }
 </style>

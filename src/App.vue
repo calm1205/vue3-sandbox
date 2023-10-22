@@ -1,6 +1,6 @@
 <script lang="ts">
-import SideMenu from "@/components/SideMenu.vue"
-import MainArea from "./components/MainArea.vue"
+import SideMenu from "@/components/sideMenu/SideMenu.vue"
+import MainArea from "@/components/MainArea.vue"
 
 export default {
   components: {
