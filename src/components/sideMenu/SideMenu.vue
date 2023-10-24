@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <ul>
-      <Item v-for="item in list" :key="item" :text="item" />
+      <Item v-for="item of routes" :key="item.name" :text="item.name" />
     </ul>
   </div>
 </template>
@@ -9,6 +9,7 @@
 <script lang="ts">
 import { defineComponent } from "vue"
 import { COLOR } from "@/constants/styles.ts"
+import { routes } from "@/router.ts"
 import Item from "./Item.vue"
 
 export default defineComponent({
@@ -16,7 +17,7 @@ export default defineComponent({
     list: { type: Array<string>, required: true },
   },
   data() {
-    return { COLOR }
+    return { COLOR, routes }
   },
   components: {
     Item,

@@ -1,14 +1,8 @@
 import { createApp } from "vue"
 import App from "./App.vue"
-import index1 from "./pages/Index.1.vue"
-import index2 from "./pages/Index.2.vue"
 import { createRouter, createWebHashHistory } from "vue-router"
+import { routes } from "./router"
 import "./styles/global.scss"
-
-const routes = [
-  { path: "/", component: index1 },
-  { path: "/about", component: { template: index2 } },
-]
 
 const router = createRouter({
   history: createWebHashHistory(),
