@@ -12,7 +12,7 @@ export default {
   <h2>Emit Child</h2>
   <div class="wrapper">
     <p>{{ text }}</p>
-    <button :click="onClick">Increment</button>
+    <button :onclick="onClick">Increment</button>
   </div>
 </template>
 

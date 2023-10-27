@@ -16,6 +16,10 @@ export default {
     getCount() {
       return this.count
     },
+    consoleLog() {
+      console.log("consoleLog")
+      console.log(this.message)
+    },
   },
   computed: {
     parentCount() {
@@ -31,7 +35,15 @@ export default {
     <h2>Parent</h2>
     <p>parentCount: {{ parentCount }}</p>
     <p>getCount: {{ getCount() }}</p>
-    <Child :text="message" :onClick="increment" />
+    <Child
+      :text="message"
+      :onClick="
+        () => {
+          increment()
+          console.log('onClick')
+        }
+      "
+    />
   </div>
 </template>
 
