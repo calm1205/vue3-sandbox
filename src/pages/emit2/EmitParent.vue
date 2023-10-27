@@ -1,28 +1,28 @@
 <script lang="ts">
-import EmitChild from "@/pages/emit/EmitChild.vue"
+import EmitChild from "@/pages/emit2/EmitChild.vue"
 
 export default {
   components: { EmitChild },
   data() {
     return {
-      childCount: 0,
       parentCount: 0,
     }
+  },
+  methods: {
+    increment() {
+      this.parentCount++
+    },
   },
 }
 </script>
 
 <template>
   <div class="wrapper">
-    <h1>Emit child → parent</h1>
+    <h1>Emit parent → child</h1>
 
     <h2>Emit Parent</h2>
     <p>parentCount: {{ parentCount }}</p>
-    <p>childCount: {{ childCount }}</p>
-    <EmitChild
-      @getCount="parentCount = $event"
-      @childCount="childCount = $event"
-    />
+    <EmitChild @onClick="increment" />
   </div>
 </template>
 
