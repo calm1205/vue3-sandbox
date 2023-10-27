@@ -4,6 +4,7 @@ export const COLOR = {
   text: "#d3d3d3",
   main: {
     _: "#a8b1ff",
+    dark: "#747bff",
   },
   primary: {
     _: "#1b1b1f",
