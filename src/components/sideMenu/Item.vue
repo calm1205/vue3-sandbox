@@ -1,6 +1,6 @@
 <template>
   <li>
-    {{ text }}
+    <router-link :to="path">{{ text }}</router-link>
   </li>
 </template>
 
@@ -11,6 +11,7 @@ import { defineComponent } from "vue"
 export default defineComponent({
   props: {
     text: { type: String, required: true },
+    path: { type: String, required: true },
   },
   data() {
     return { COLOR }
@@ -23,6 +24,7 @@ li {
   font-size: 14px;
   letter-spacing: 0.1em;
   color: v-bind("COLOR.text");
+  cursor: pointer;
   &:hover {
     color: v-bind("COLOR.main._");
   }

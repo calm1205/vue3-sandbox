@@ -1,7 +1,12 @@
 <template>
   <div class="wrapper">
     <ul>
-      <Item v-for="item of routes" :key="item.name" :text="item.name" />
+      <Item
+        v-for="item of routes"
+        :key="item.name"
+        :text="item.name?.toString() ?? ''"
+        :path="item.path?.toString() ?? ''"
+      />
     </ul>
   </div>
 </template>
