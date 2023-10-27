@@ -6,6 +6,7 @@ export default {
   data() {
     return {
       count: 0,
+      message: "Hello from Parent",
     }
   },
   methods: {
@@ -30,8 +31,8 @@ export default {
 
     <h2>Parent</h2>
     <p>parentCount: {{ parentCount }}</p>
-    <p>parentCount: {{ getCount() }}</p>
-    <Child :onClick="increment" />
+    <p>getCount: {{ getCount() }}</p>
+    <Child :text="message" :onClick="increment" />
   </div>
 </template>
 
