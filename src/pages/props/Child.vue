@@ -2,14 +2,8 @@
 export default {
   name: "Child",
   props: {
-    text: {
-      type: String,
-      required: true,
-    },
-    onClick: {
-      type: Function,
-      required: true,
-    },
+    text: { type: String, required: true },
+    onClick: { type: Function, required: true },
   },
 }
 </script>

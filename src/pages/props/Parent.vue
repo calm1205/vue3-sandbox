@@ -28,7 +28,6 @@ export default {
 <template>
   <div class="wrapper">
     <h1>Props</h1>
-
     <h2>Parent</h2>
     <p>parentCount: {{ parentCount }}</p>
     <p>getCount: {{ getCount() }}</p>
