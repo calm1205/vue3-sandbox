@@ -3,6 +3,8 @@ import App from "./App.vue"
 import { createRouter, createWebHashHistory } from "vue-router"
 import { routes } from "./router"
 import ElementPlus from "element-plus"
+
+// import "element-plus/dist/index.css"
 import "./styles/global.scss"
 
 const router = createRouter({

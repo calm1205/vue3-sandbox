@@ -1,7 +1,7 @@
 <template>
   <section>
     <h1>Select menu item.</h1>
-    <el-button>button</el-button>
+    <el-button type="primary">button</el-button>
   </section>
 </template>
 
