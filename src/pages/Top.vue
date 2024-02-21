@@ -1,5 +1,8 @@
 <template>
-  <h1>Select menu item.</h1>
+  <section>
+    <h1>Select menu item.</h1>
+    <el-button>button</el-button>
+  </section>
 </template>
 
 <script lang="ts">
