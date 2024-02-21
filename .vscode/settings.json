@@ -1,6 +1,6 @@
 {
   "cSpell.ignoreWords": ["linebreak"],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   }
 }
