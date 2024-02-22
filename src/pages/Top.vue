@@ -12,5 +12,6 @@ export default {}
 <style lang="scss" scoped>
 h1 {
   font-size: 30px;
+  color: custom.$COLOR_MAIN_DARK;
 }
 </style>

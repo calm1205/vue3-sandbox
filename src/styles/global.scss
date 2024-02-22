@@ -1,7 +1,7 @@
 html,
 body {
   width: 100vw;
-  background-color: $COLOR_PRIMARY;
+  background-color: custom.$COLOR_PRIMARY;
 }
 
 * {
@@ -25,11 +25,11 @@ ul {
 button {
   padding: 10px;
   color: white;
-  background-color: $COLOR_MAIN_DARK;
+  background-color: custom.$COLOR_MAIN_DARK;
   border: none;
   border-radius: 9999px;
   cursor: pointer;
   &:active {
-    background-color: $COLOR_MAIN;
+    background-color: custom.$COLOR_MAIN;
   }
 }

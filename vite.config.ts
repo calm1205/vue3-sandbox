@@ -25,8 +25,8 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @use "@/styles/element/index.scss" as *; \
-          @use "@/styles/variable.scss" as *;
+          @use "@/styles/element-plus/index.scss"; \
+          @use "@/styles/variable.scss" as custom; \
         `,
       },
     },
