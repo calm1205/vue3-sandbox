@@ -20,6 +20,9 @@ export default {
       console.log("consoleLog")
       console.log(this.message)
     },
+    alertText(text: string) {
+      alert(text)
+    },
   },
   computed: {
     parentCount() {
@@ -43,6 +46,7 @@ export default {
           console.log('onClick')
         }
       "
+      :alertText="alertText"
     />
   </div>
 </template>

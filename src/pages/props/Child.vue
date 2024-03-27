@@ -4,15 +4,17 @@ export default {
   props: {
     text: { type: String, required: true },
     onClick: { type: Function, required: true },
+    alertText: { type: Function, required: true },
   },
 }
 </script>
 
 <template>
-  <h2>Emit Child</h2>
+  <h2>Child</h2>
   <div class="wrapper">
     <p>{{ text }}</p>
     <button :onclick="onClick">Increment</button>
+    <button @click="() => alertText('hogehoge')">alert</button>
   </div>
 </template>
 
