@@ -13,7 +13,6 @@
 
 <script lang="ts">
 import { defineComponent } from "vue"
-import { COLOR } from "@/constants/styles.ts"
 import { routes } from "@/router.ts"
 import Item from "./Item.vue"
 
@@ -22,7 +21,7 @@ export default defineComponent({
     list: { type: Array<string>, required: true },
   },
   data() {
-    return { COLOR, routes }
+    return { routes }
   },
   components: {
     Item,
@@ -35,7 +34,7 @@ export default defineComponent({
   width: 300px;
   height: 100vh;
   padding: 50px;
-  background-color: v-bind("COLOR.primary._");
+  background-color: custom.$COLOR_PRIMARY;
 }
 
 ul {
