@@ -5,6 +5,7 @@ import index2 from "@/pages/emitChild2Parent/EmitParent.vue"
 import index3 from "@/pages/emitParent2Child/EmitParent.vue"
 import index4 from "@/pages/props/Parent.vue"
 import index5 from "@/pages/propsType/PropsType.vue"
+import index6 from "@/pages/model/Model.vue"
 
 export const routes: RouteRecordRaw[] = [
   { path: "/", name: "top", component: top },
@@ -28,5 +29,10 @@ export const routes: RouteRecordRaw[] = [
     path: "/propsType",
     name: "propsType",
     component: index5,
+  },
+  {
+    path: "/model",
+    name: "model",
+    component: index6,
   },
 ]
