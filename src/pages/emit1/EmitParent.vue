@@ -20,8 +20,8 @@ export default {
     <p>parentCount: {{ parentCount }}</p>
     <p>childCount: {{ childCount }}</p>
     <EmitChild
-      @getCount="parentCount = $event"
-      @childCount="childCount = $event"
+      @get-count="parentCount = $event"
+      @child-count="childCount = $event"
     />
   </div>
 </template>

@@ -1,5 +1,7 @@
 <script lang="ts">
-export default {}
+/**
+ * styleシートを外に出してみたかった
+ */
 </script>
 
 <template>
@@ -9,4 +11,5 @@ export default {}
   </div>
 </template>
 
+<!-- scopedは効く -->
 <style scoped src="./Split.scss" />
