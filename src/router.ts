@@ -1,7 +1,7 @@
 import { RouteRecordRaw } from "vue-router"
 import top from "@/pages/Top.vue"
 import index1 from "@/pages/split/Split.vue"
-import index2 from "@/pages/emit1/EmitParent.vue"
+import index2 from "@/pages/emitChild2Parent/EmitParent.vue"
 import index3 from "@/pages/emit2/EmitParent.vue"
 import index4 from "@/pages/props/Parent.vue"
 import index5 from "@/pages/propsType/PropsType.vue"

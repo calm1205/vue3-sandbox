@@ -1,4 +1,4 @@
-<script lang="ts">
+<script setup lang="ts">
 /**
  * styleシートを外に出してみたかった
  */

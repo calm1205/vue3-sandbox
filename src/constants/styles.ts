@@ -1,4 +1,7 @@
-/** 色のスタイル */
+/**
+ * 色のスタイル
+ * v-bindでstyleを指定するために活用
+ */
 export const COLOR = {
   white: "white",
   text: "#d3d3d3",

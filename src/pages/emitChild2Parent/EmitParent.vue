@@ -1,5 +1,5 @@
 <script lang="ts">
-import EmitChild from "@/pages/emit1/EmitChild.vue"
+import EmitChild from "@/pages/emitChild2Parent/EmitChild.vue"
 
 export default {
   components: { EmitChild },
