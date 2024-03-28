@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-  <h2>Emit Child</h2>
+  <h2>Child</h2>
   <div class="wrapper">
     <button @click="onClick">Increment parent count</button>
   </div>

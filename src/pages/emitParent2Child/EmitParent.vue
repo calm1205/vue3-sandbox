@@ -1,16 +1,16 @@
 <script lang="ts">
-import EmitChild from "@/pages/emit2/EmitChild.vue"
+import EmitChild from "@/pages/emitParent2Child/EmitChild.vue"
 
 export default {
   components: { EmitChild },
   data() {
     return {
-      parentCount: 0,
+      count: 0,
     }
   },
   methods: {
     increment() {
-      this.parentCount++
+      this.count++
     },
   },
 }
@@ -19,9 +19,10 @@ export default {
 <template>
   <div class="wrapper">
     <h1>Emit parent → child</h1>
+    <p>親コンポーネントから子コンポーネントにイベントを渡す</p>
 
-    <h2>Emit Parent</h2>
-    <p>parentCount: {{ parentCount }}</p>
+    <h2>Parent</h2>
+    <p>count: {{ count }}</p>
     <EmitChild @onClick="increment" />
   </div>
 </template>
