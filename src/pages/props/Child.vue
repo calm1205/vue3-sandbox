@@ -11,11 +11,9 @@ export default {
 
 <template>
   <h2>Child</h2>
-  <div class="wrapper">
-    <p>{{ text }}</p>
-    <button :onclick="onClick">Increment</button>
-    <button @click="() => alertText('hogehoge')">alert</button>
-  </div>
+  <p>{{ text }}</p>
+  <button :onclick="onClick">Increment</button>
+  <button @click="() => alertText('hello world')">alert</button>
 </template>
 
 <style scoped lang="scss">

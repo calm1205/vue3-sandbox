@@ -13,20 +13,9 @@ export default {
     increment() {
       this.count++
     },
-    getCount() {
-      return this.count
-    },
-    consoleLog() {
-      console.log("consoleLog")
-      console.log(this.message)
-    },
     alertText(text: string) {
-      alert(text)
-    },
-  },
-  computed: {
-    parentCount() {
-      return this.count
+      const upperText = text.toUpperCase()
+      alert(upperText)
     },
   },
 }
@@ -36,18 +25,9 @@ export default {
   <div class="wrapper">
     <h1>Props</h1>
     <h2>Parent</h2>
-    <p>parentCount: {{ parentCount }}</p>
-    <p>getCount: {{ getCount() }}</p>
-    <Child
-      :text="message"
-      :onClick="
-        () => {
-          increment()
-          console.log('onClick')
-        }
-      "
-      :alertText="alertText"
-    />
+    <p>count: {{ count }}</p>
+
+    <Child :text="message" :onClick="increment" :alertText="alertText" />
   </div>
 </template>
 
