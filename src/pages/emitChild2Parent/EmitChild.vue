@@ -1,33 +1,30 @@
 <script lang="ts">
 export default {
   name: "EmitChild",
-  emits: ["getCount", "childCount"],
+  emits: ["getCount"],
   data() {
     return {
       count: 0,
     }
   },
   methods: {
-    childCount() {
-      this.$emit("childCount", this.count)
-    },
     getCount() {
+      console.log("getCount")
       this.$emit("getCount", this.count)
     },
     increment() {
       this.count++
-      this.childCount()
     },
   },
 }
 </script>
 
 <template>
-  <h2>Emit Child</h2>
+  <h2>Child</h2>
+  <p>childCount: {{ count }}</p>
   <div class="wrapper">
-    <button @click="getCount">Update parent count</button>
+    <button @click="getCount">update parent count</button>
     <button @click="increment">Increment</button>
-    <p>childCount: {{ count }}</p>
   </div>
 </template>
 

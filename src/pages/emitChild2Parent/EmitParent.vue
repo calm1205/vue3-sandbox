@@ -5,8 +5,7 @@ export default {
   components: { EmitChild },
   data() {
     return {
-      childCount: 0,
-      parentCount: 0,
+      count: 0,
     }
   },
 }
@@ -16,13 +15,14 @@ export default {
   <div class="wrapper">
     <h1>Emit child → parent</h1>
 
-    <h2>Emit Parent</h2>
-    <p>parentCount: {{ parentCount }}</p>
-    <p>childCount: {{ childCount }}</p>
-    <EmitChild
-      @get-count="parentCount = $event"
-      @child-count="childCount = $event"
-    />
+    <p>子コンポーネントから親コンポーネントにイベントの引数を通して値を渡す</p>
+
+    <section class="parent">
+      <h2>Parent</h2>
+      <p>count: {{ count }}</p>
+    </section>
+
+    <EmitChild @get-count="(childCount) => (count = childCount)" />
   </div>
 </template>
 
@@ -34,5 +34,10 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 </style>
