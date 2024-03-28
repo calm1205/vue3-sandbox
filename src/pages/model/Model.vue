@@ -5,6 +5,7 @@ import ComponentModel from "./ComponentModel.vue"
 import { ref } from "vue"
 
 const componentModelText = ref("")
+const componentModelText2 = ref("")
 </script>
 
 <template>
@@ -17,8 +18,11 @@ const componentModelText = ref("")
     <!-- コンポーネント化したv-model -->
     <ComponentModel
       :model-value="componentModelText"
-      @update="(newValue) => (componentModelText = newValue)"
+      @update:model-value="
+        (newValue: string) => (componentModelText = newValue)
+      "
     />
+    <ComponentModel v-model="componentModelText2" />
   </section>
 </template>
 

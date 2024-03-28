@@ -1,7 +1,7 @@
 <script lang="ts">
 export default {
   props: ["modelValue"],
-  emits: ["update"],
+  emits: ["update:modelValue"],
 }
 </script>
 
@@ -13,9 +13,12 @@ export default {
       <label for="componentModel">ComponentModel: </label>
       <span>{{ modelValue }}</span>
     </div>
+    <!-- emitのevent名はupdate:hogeである必要がある -->
     <input
       :value="modelValue"
-      @input="$emit('update', ($event.target as HTMLInputElement).value)"
+      @input="
+        $emit('update:modelValue', ($event.target as HTMLInputElement).value)
+      "
     />
     <hr />
   </section>
