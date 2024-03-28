@@ -22,7 +22,10 @@ export default {
       <p>count: {{ count }}</p>
     </section>
 
-    <EmitChild @get-count="(childCount) => (count = childCount)" />
+    <EmitChild
+      @get-count="(childCount) => (count = childCount)"
+      @increment-parent="count++"
+    />
   </div>
 </template>
 
