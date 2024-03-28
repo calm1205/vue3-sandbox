@@ -24,6 +24,12 @@ a {
   text-decoration: none;
 }
 
+input {
+  color: custom.$COLOR_PRIMARY;
+  background-color: custom.$COLOR_WHITE;
+  padding: 5px 10px;
+}
+
 ul {
   list-style: none;
 }

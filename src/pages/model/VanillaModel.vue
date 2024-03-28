@@ -20,6 +20,7 @@ export default {
     </div>
     <input v-model="searchTextModel" />
 
+    <!-- v-modelを分解したもの -->
     <div>
       <label>vanilla: </label>
       <span>{{ searchTextVanilla }}</span>
@@ -39,13 +40,5 @@ export default {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-}
-input {
-  color: custom.$COLOR_PRIMARY;
-  background-color: custom.$COLOR_WHITE;
-  padding: 5px 10px;
-}
-span {
-  color: custom.$COLOR_WHITE;
 }
 </style>

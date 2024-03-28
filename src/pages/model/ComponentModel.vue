@@ -1,9 +1,31 @@
-<script lang="ts"></script>
+<script lang="ts">
+export default {
+  props: ["modelValue"],
+  emits: ["update"],
+}
+</script>
 
 <template>
   <section>
     <h2>ComponentModel</h2>
+
+    <div>
+      <label for="componentModel">ComponentModel: </label>
+      <span>{{ modelValue }}</span>
+    </div>
+    <input
+      :value="modelValue"
+      @input="$emit('update', ($event.target as HTMLInputElement).value)"
+    />
+    <hr />
   </section>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+</style>
