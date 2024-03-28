@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import VanillaModel from "./VanillaModel.vue"
+import ComponentModel from "./ComponentModel.vue"
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import VanillaModel from "./VanillaModel.vue"
 
     <VanillaModel />
 
+    <ComponentModel />
     <hr />
   </section>
 </template>
@@ -16,7 +18,7 @@ import VanillaModel from "./VanillaModel.vue"
 .wrap {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   width: 100%;
 }
 </style>

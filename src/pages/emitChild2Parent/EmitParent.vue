@@ -30,9 +30,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-h2 {
-  font-size: 20px;
-}
 .wrapper {
   display: flex;
   flex-direction: column;

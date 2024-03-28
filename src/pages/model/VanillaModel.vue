@@ -28,6 +28,8 @@ export default {
       :value="searchTextVanilla"
       @input="searchTextVanilla = ($event.target as HTMLInputElement).value"
     />
+
+    <hr />
   </section>
 </template>
 
