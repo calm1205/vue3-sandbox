@@ -1,13 +1,10 @@
 <template>
   <section>
     <h1>Select menu item.</h1>
-    <el-button type="primary">button</el-button>
   </section>
 </template>
 
-<script lang="ts">
-export default {}
-</script>
+<script lang="ts"></script>
 
 <style lang="scss" scoped>
 h1 {

@@ -1,12 +1,10 @@
 <template>
   <div class="wrapper">
-    <slot />
+    <slot></slot>
   </div>
 </template>
 
-<script lang="ts">
-export default {}
-</script>
+<script lang="ts"></script>
 
 <style lang="scss" scoped>
 .wrapper {
